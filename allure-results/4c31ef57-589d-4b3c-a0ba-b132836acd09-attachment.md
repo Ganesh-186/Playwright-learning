@@ -1,0 +1,470 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: example.spec.js >> Iframe
+- Location: tests\example.spec.js:3:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e7]:
+        - generic:
+          - generic:
+            - generic:
+              - button [ref=e8] [cursor=pointer]
+              - textbox "Search..." [ref=e9]
+          - link "pinterest" [ref=e10] [cursor=pointer]:
+            - /url: https://in.pinterest.com/globalsqa/
+          - link "twitter" [ref=e11] [cursor=pointer]:
+            - /url: https://twitter.com/Global_SQA
+          - link "linkedin" [ref=e12] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/globalsqa
+          - link "google" [ref=e13] [cursor=pointer]:
+            - /url: https://plus.google.com/103761557396023531439/posts
+          - link "facebook" [ref=e14] [cursor=pointer]:
+            - /url: https://facebook.com/globalsqa
+          - generic [ref=e16]: contact@globalsqa.com
+      - generic [ref=e19]:
+        - link "GlobalSQA" [ref=e22] [cursor=pointer]:
+          - /url: https://www.globalsqa.com/
+          - img "GlobalSQA" [ref=e23]
+        - generic [ref=e24]:
+          - list:
+            - listitem [ref=e25]:
+              - link "About" [ref=e26] [cursor=pointer]:
+                - /url: https://www.globalsqa.com/about/
+            - listitem [ref=e27]:
+              - link "CheatSheets" [ref=e28] [cursor=pointer]:
+                - /url: https://www.globalsqa.com/cheatsheets/
+            - listitem [ref=e29]:
+              - link "Free Ebooks" [ref=e30] [cursor=pointer]:
+                - /url: https://www.globalsqa.com/free-ebooks/
+                - text: Free Ebooks
+            - listitem [ref=e32]:
+              - link "Tester’s Hub" [ref=e33] [cursor=pointer]:
+                - /url: https://www.globalsqa.com/testers-hub/
+                - text: Tester’s Hub
+              - text:  
+            - listitem [ref=e35]:
+              - link "Contact Us" [ref=e36] [cursor=pointer]:
+                - /url: https://www.globalsqa.com/contact-us/
+      - text:    
+    - generic [ref=e37]:
+      - generic [ref=e41]:
+        - generic [ref=e42]:
+          - link "Home" [ref=e43] [cursor=pointer]:
+            - /url: https://www.globalsqa.com/
+            - generic [ref=e44]: Home
+          - link "Demo Testing Site" [ref=e45] [cursor=pointer]:
+            - /url: https://www.globalsqa.com/demo-site/
+            - generic [ref=e46]: Demo Testing Site
+          - link "Frames And Windows" [ref=e47] [cursor=pointer]:
+            - /url: https://www.globalsqa.com/demo-site/frames-and-windows/
+            - generic [ref=e48]: Frames And Windows
+        - heading "Frames And Windows" [level=1] [ref=e50]
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - heading "Interaction" [level=4] [ref=e56]
+            - list [ref=e58]:
+              - listitem [ref=e59]:
+                - link "Sortable" [ref=e60] [cursor=pointer]:
+                  - /url: https://www.globalsqa.com/demo-site/sorting/
+                  - generic [ref=e61]: Sortable
+              - listitem [ref=e62]:
+                - link "Drag And Drop" [ref=e63] [cursor=pointer]:
+                  - /url: https://www.globalsqa.com/demo-site/draganddrop/
+                  - generic [ref=e64]: Drag And Drop
+              - listitem [ref=e65]:
+                - link "Select Elements" [ref=e66] [cursor=pointer]:
+                  - /url: https://www.globalsqa.com/demo-site/select-elements/
+                  - generic [ref=e67]: Select Elements
+              - listitem [ref=e68]:
+                - link "Draggable Boxes" [ref=e69] [cursor=pointer]:
+                  - /url: https://www.globalsqa.com/demo-site/draggableboxes/
+                  - generic [ref=e70]: Draggable Boxes
+              - listitem [ref=e71]:
+                - link "DropDown Menu" [ref=e72] [cursor=pointer]:
+                  - /url: https://www.globalsqa.com/demo-site/select-dropdown-menu/
+                  - generic [ref=e73]: DropDown Menu
+          - generic [ref=e74]:
+            - heading "Widgets" [level=4] [ref=e75]
+            - list [ref=e77]:
+              - listitem [ref=e78]:
+                - link "Tooltip" [ref=e79] [cursor=pointer]:
+                  - /url: https://www.globalsqa.com/demo-site/tooltip/
+                  - generic [ref=e80]: Tooltip
+              - listitem [ref=e81]:
+                - link "Sliders" [ref=e82] [cursor=pointer]:
+                  - /url: https://www.globalsqa.com/demo-site/sliders/
+                  - generic [ref=e83]: Sliders
+              - listitem [ref=e84]:
+                - link "Spinner" [ref=e85] [cursor=pointer]:
+                  - /url: https://www.globalsqa.com/demo-site/spinner/
+                  - generic [ref=e86]: Spinner
+              - listitem [ref=e87]:
+                - link "DatePicker" [ref=e88] [cursor=pointer]:
+                  - /url: https://www.globalsqa.com/demo-site/datepicker/
+                  - generic [ref=e89]: DatePicker
+              - listitem [ref=e90]:
+                - link "Progress Bar" [ref=e91] [cursor=pointer]:
+                  - /url: https://www.globalsqa.com/demo-site/progress-bar/
+                  - generic [ref=e92]: Progress Bar
+              - listitem [ref=e93]:
+                - link "Dialog Boxes" [ref=e94] [cursor=pointer]:
+                  - /url: https://www.globalsqa.com/demo-site/dialog-boxes/
+                  - generic [ref=e95]: Dialog Boxes
+              - listitem [ref=e96]:
+                - link "Auto Complete" [ref=e97] [cursor=pointer]:
+                  - /url: https://www.globalsqa.com/demo-site/auto-complete/
+                  - generic [ref=e98]: Auto Complete
+              - listitem [ref=e99]:
+                - link "Accordion And Tabs" [ref=e100] [cursor=pointer]:
+                  - /url: https://www.globalsqa.com/demo-site/accordion-and-tabs/
+                  - generic [ref=e101]: Accordion And Tabs
+          - generic [ref=e102]:
+            - generic:
+              - insertion:
+                - iframe [ref=e104]:
+                  
+            - heading "Miscellaneous" [level=4] [ref=e105]
+            - list [ref=e107]:
+              - listitem [ref=e108]:
+                - link "AlertBox" [ref=e109] [cursor=pointer]:
+                  - /url: https://www.globalsqa.com/demo-site/alertbox/
+                  - generic [ref=e110]: AlertBox
+              - listitem [ref=e111]:
+                - link "Toolbar" [ref=e112] [cursor=pointer]:
+                  - /url: https://www.globalsqa.com/demo-site/toolbar/
+                  - generic [ref=e113]: Toolbar
+              - listitem [ref=e114]:
+                - link "Sample Page Test" [ref=e115] [cursor=pointer]:
+                  - /url: https://www.globalsqa.com/samplepagetest/
+                  - generic [ref=e116]: Sample Page Test
+              - listitem [ref=e117]:
+                - link "Frames And Windows" [ref=e118] [cursor=pointer]:
+                  - /url: https://www.globalsqa.com/demo-site/frames-and-windows/
+                  - generic [ref=e119]: Frames And Windows
+              - listitem [ref=e120]:
+                - link "AngularJS Protractor Practice Site" [ref=e121] [cursor=pointer]:
+                  - /url: https://www.globalsqa.com/angularjs-protractor-practice-site/
+                  - generic [ref=e122]: AngularJS Protractor Practice Site
+          - generic [ref=e125]:
+            - heading "These are topics related to the article that might interest you" [level=2] [ref=e127]: Discover more
+            - link "Calendar & Scheduling Software" [ref=e128] [cursor=pointer]:
+              - generic "Calendar & Scheduling Software" [ref=e129]
+              - img [ref=e131]
+            - link "Input Devices" [ref=e133] [cursor=pointer]:
+              - generic "Input Devices" [ref=e134]
+              - img [ref=e136]
+            - link "Web Apps & Online Tools" [ref=e138] [cursor=pointer]:
+              - generic "Web Apps & Online Tools" [ref=e139]
+              - img [ref=e141]
+            - link "Development Tools" [ref=e143] [cursor=pointer]:
+              - generic "Development Tools" [ref=e144]
+              - img [ref=e146]
+            - link "Software Utilities" [ref=e148] [cursor=pointer]:
+              - generic "Software Utilities" [ref=e149]
+              - img [ref=e151]
+            - link "Technical Support & Repair" [ref=e153] [cursor=pointer]:
+              - generic "Technical Support & Repair" [ref=e154]
+              - img [ref=e156]
+            - link "Time & Calendars" [ref=e158] [cursor=pointer]:
+              - generic "Time & Calendars" [ref=e159]
+              - img [ref=e161]
+            - link "Software" [ref=e163] [cursor=pointer]:
+              - generic "Software" [ref=e164]
+              - img [ref=e166]
+          - iframe [ref=e169]:
+            
+        - generic [ref=e170]:
+          - generic [ref=e171]:
+            - list [ref=e172]:
+              - tab "Open New Tab" [ref=e173] [cursor=pointer]
+              - tab "Open New Window" [ref=e174] [cursor=pointer]
+              - tab "iFrame" [ref=e175] [cursor=pointer]
+            - generic [ref=e177]:
+              - emphasis [ref=e180]:
+                - strong [ref=e181]: Below is an iFrame. If you want to perform any operation in this window, you will need to enter in this iframe.
+              - paragraph [ref=e182]:
+                - iframe [ref=e183]: <br />:
+                  - generic [ref=f1e2]:
+                    - banner [ref=f1e3]:
+                      - generic [ref=f1e7]:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button [ref=f1e8] [cursor=pointer]
+                              - textbox "Search..." [ref=f1e9]
+                          - link "pinterest" [ref=f1e10] [cursor=pointer]:
+                            - /url: https://in.pinterest.com/globalsqa/
+                          - link "twitter" [ref=f1e11] [cursor=pointer]:
+                            - /url: https://twitter.com/Global_SQA
+                          - link "linkedin" [ref=f1e12] [cursor=pointer]:
+                            - /url: https://www.linkedin.com/company/globalsqa
+                          - link "google" [ref=f1e13] [cursor=pointer]:
+                            - /url: https://plus.google.com/103761557396023531439/posts
+                          - link "facebook" [ref=f1e14] [cursor=pointer]:
+                            - /url: https://facebook.com/globalsqa
+                          - generic [ref=f1e16]: contact@globalsqa.com
+                      - generic [ref=f1e19]:
+                        - link "GlobalSQA" [ref=f1e22] [cursor=pointer]:
+                          - /url: https://www.globalsqa.com/
+                          - img "GlobalSQA" [ref=f1e23]
+                        - generic:  
+                      - text:    
+                    - generic [ref=f1e25]:
+                      - generic [ref=f1e29]:
+                        - generic [ref=f1e30]:
+                          - link "Home" [ref=f1e31] [cursor=pointer]:
+                            - /url: https://www.globalsqa.com/
+                            - generic [ref=f1e32]: Home
+                          - link "Performance Testing" [ref=f1e33] [cursor=pointer]:
+                            - /url: https://www.globalsqa.com/portfolio_category/performance-testing/
+                            - generic [ref=f1e34]: Performance Testing
+                          - link "Software Testing" [ref=f1e35] [cursor=pointer]:
+                            - /url: https://www.globalsqa.com/portfolio_category/softwaretesting/
+                            - generic [ref=f1e36]: Software Testing
+                          - link "JMeter Training" [ref=f1e37] [cursor=pointer]:
+                            - /url: https://www.globalsqa.com/training/jmeter-training/
+                            - generic [ref=f1e38]: JMeter Training
+                        - heading "JMeter Training" [level=1] [ref=f1e40]
+                      - generic [ref=f1e42]:
+                        - link [ref=f1e45] [cursor=pointer]:
+                          - /url: https://i0.wp.com/www.globalsqa.com/wp-content/uploads/2016/02/JMeterTraining.jpg?resize=1200%2C780&ssl=1
+                          - img [ref=f1e46]
+                        - generic [ref=f1e52]:
+                          - generic [ref=f1e53]:
+                            - generic [ref=f1e56]:
+                              - heading "About JMeter" [level=3] [ref=f1e57]:
+                                - strong [ref=f1e58]: About JMeter
+                              - paragraph [ref=f1e59]:
+                                - text: JMeter is an Apache Jakarta project that can be used as a load testing tool for analysing and measuring the performance of a variety of services, with a focus on web applications.
+                                - text: Apache JMeter is an open source software, a 100% pure Java desktop application designed to load test functional behaviour and measure performance. It was originally designed to test Web Applications but then it was expanded to test other functionalities as well.
+                              - paragraph [ref=f1e60]:
+                                - strong [ref=f1e61]: JMeter Tool Training Overview
+                              - paragraph [ref=f1e62]: This course is designed to give participants skills & knowledge to gain a competitive advantage in enhancing the career in Performance Testing. This training program basically focuses on “how to use JMeter tool to do performance testing of a website, application etc”. As it is truly said that “practice makes the man perfect”, this course is facilitate students to have enough practice work with the structured techniques. It is discussed during the class exercises that comprises approximately 90% of practical sessions.
+                            - insertion [ref=f1e64]:
+                              - generic [ref=f1e67]:
+                                - heading "These are topics related to the article that might interest you" [level=2] [ref=f1e69]: Discover more
+                                - link "Programming" [ref=f1e70] [cursor=pointer]:
+                                  - generic "Programming" [ref=f1e71]
+                                  - img [ref=f1e73]
+                                - link "Energy & Utilities" [ref=f1e75] [cursor=pointer]:
+                                  - generic "Energy & Utilities" [ref=f1e76]
+                                  - img [ref=f1e78]
+                                - link "Software Testing" [ref=f1e80] [cursor=pointer]:
+                                  - generic "Software Testing" [ref=f1e81]
+                                  - img [ref=f1e83]
+                          - generic [ref=f1e87]:
+                            - generic [ref=f1e89]:
+                              - list [ref=f1e90]:
+                                - tab "Course Content" [ref=f1e91] [cursor=pointer]
+                                - tab "Joining Benefits" [ref=f1e92] [cursor=pointer]
+                                - tab "Batch Schedule" [ref=f1e93] [cursor=pointer]
+                              - generic [ref=f1e95]:
+                                - paragraph [ref=f1e96]:
+                                  - iframe [ref=f1e97]:
+                                    - generic [active] [ref=f21e1]:
+                                      - generic [ref=f21e4]:
+                                        - region "Slides" [ref=f21e5]:
+                                          - generic [ref=f21e6]:
+                                            - img "Slide 1"
+                                          - generic [ref=f21e7]:
+                                            - img "Slide 2"
+                                          - generic [ref=f21e8]:
+                                            - img "Slide 3"
+                                          - generic [ref=f21e9]:
+                                            - img "Slide 4"
+                                        - generic [ref=f21e10]:
+                                          - link "View on Slideshare" [ref=f21e12] [cursor=pointer]:
+                                            - /url: https://www.slideshare.net/secret/zdqYyc4z9MJssp
+                                          - navigation [ref=f21e13]:
+                                            - button "Previous Slide" [disabled]:
+                                              - img "chevron-left icon"
+                                            - generic [ref=f21e14]:
+                                              - generic [ref=f21e15]: "1"
+                                              - generic [ref=f21e16]: / 4
+                                            - button "Next Slide" [ref=f21e17] [cursor=pointer]:
+                                              - img "chevron-right icon" [ref=f21e18]
+                                          - button "Share" [ref=f21e19] [cursor=pointer]:
+                                            - img "share-dot icon" [ref=f21e20]
+                                          - button "View Fullscreen" [ref=f21e21] [cursor=pointer]:
+                                            - img "maximize icon" [ref=f21e22]
+                                      - alert [ref=f21e23]
+                                - generic [ref=f1e98]:
+                                  - strong [ref=f1e99]:
+                                    - link "JMeter course_content" [ref=f1e100] [cursor=pointer]:
+                                      - /url: //www.slideshare.net/secret/zdqYyc4z9MJssp
+                                  - text: from
+                                  - strong [ref=f1e101]:
+                                    - link "Global SQA" [ref=f1e102] [cursor=pointer]:
+                                      - /url: //www.slideshare.net/globalsqa
+                            - paragraph [ref=f1e103]
+                          - paragraph [ref=f1e104]
+                      - generic [ref=f1e108]:
+                        - heading "Trainings You Might be interested in" [level=2] [ref=f1e109]
+                        - list [ref=f1e113]:
+                          - listitem [ref=f1e114]:
+                            - link "Calabash Mobile App Automation Training Calabash Training Automation / Performance Testing" [ref=f1e115] [cursor=pointer]:
+                              - /url: https://www.globalsqa.com/training/calabash-training/
+                              - generic [ref=f1e116]:
+                                - img "Calabash Mobile App Automation Training" [ref=f1e120]
+                                - generic [ref=f1e123]:
+                                  - heading "Calabash Training" [level=3] [ref=f1e125]
+                                  - paragraph [ref=f1e126]: Automation / Performance Testing
+                          - listitem [ref=f1e127]:
+                            - link "LoadRunner Training HP LoadRunner Training Performance Testing" [ref=f1e128] [cursor=pointer]:
+                              - /url: https://www.globalsqa.com/training/hp-load-runner-online-training/
+                              - generic [ref=f1e129]:
+                                - img "LoadRunner Training" [ref=f1e133]
+                                - generic [ref=f1e136]:
+                                  - heading "HP LoadRunner Training" [level=3] [ref=f1e138]
+                                  - paragraph [ref=f1e139]: Performance Testing
+                          - listitem [ref=f1e140]:
+                            - link "Mobile Application Testing Training Mobile Application Testing Training Software Testing" [ref=f1e141] [cursor=pointer]:
+                              - /url: https://www.globalsqa.com/training/mobile-apps-testing-online-training/
+                              - generic [ref=f1e142]:
+                                - img "Mobile Application Testing Training" [ref=f1e146]
+                                - generic [ref=f1e149]:
+                                  - heading "Mobile Application Testing Training" [level=3] [ref=f1e151]
+                                  - paragraph [ref=f1e152]: Software Testing
+                          - listitem [ref=f1e153]:
+                            - link "Manual Online Testing Training Manual Testing Training Software Testing" [ref=f1e154] [cursor=pointer]:
+                              - /url: https://www.globalsqa.com/training/manual-testing-training/
+                              - generic [ref=f1e155]:
+                                - img "Manual Online Testing Training" [ref=f1e159]
+                                - generic [ref=f1e162]:
+                                  - heading "Manual Testing Training" [level=3] [ref=f1e164]
+                                  - paragraph [ref=f1e165]: Software Testing
+                          - listitem [ref=f1e166]:
+                            - link "Appium Training Appium Training Automation / Software Testing" [ref=f1e167] [cursor=pointer]:
+                              - /url: https://www.globalsqa.com/training/appium-online-training/
+                              - generic [ref=f1e168]:
+                                - img "Appium Training" [ref=f1e172]
+                                - generic [ref=f1e175]:
+                                  - heading "Appium Training" [level=3] [ref=f1e177]
+                                  - paragraph [ref=f1e178]: Automation / Software Testing
+                    - insertion [ref=f1e182]:
+                      - generic [ref=f1e185]:
+                        - heading "These are topics related to the article that might interest you" [level=2] [ref=f1e187]: Discover more
+                        - link "Trainings" [ref=f1e188] [cursor=pointer]:
+                          - generic "Trainings" [ref=f1e189]
+                          - img [ref=f1e191]
+                        - link "Database Testing" [ref=f1e193] [cursor=pointer]:
+                          - generic "Database Testing" [ref=f1e194]
+                          - img [ref=f1e196]
+                        - link "Vocational & Continuing Education" [ref=f1e198] [cursor=pointer]:
+                          - generic "Vocational & Continuing Education" [ref=f1e199]
+                          - img [ref=f1e201]
+                    - generic [ref=f1e203]:
+                      - generic [ref=f1e205]:
+                        - generic [ref=f1e206]:
+                          - heading "Footer Widget Area 1" [level=3] [ref=f1e207]
+                          - paragraph [ref=f1e208]:
+                            - link "Assign a widget to this area now." [ref=f1e209] [cursor=pointer]:
+                              - /url: https://www.globalsqa.com/wp-admin/widgets.php
+                        - generic [ref=f1e210]:
+                          - heading "Footer Widget Area 2" [level=3] [ref=f1e211]
+                          - paragraph [ref=f1e212]:
+                            - link "Assign a widget to this area now." [ref=f1e213] [cursor=pointer]:
+                              - /url: https://www.globalsqa.com/wp-admin/widgets.php
+                        - generic [ref=f1e214]:
+                          - heading "Footer Widget Area 3" [level=3] [ref=f1e215]
+                          - paragraph [ref=f1e216]:
+                            - link "Assign a widget to this area now." [ref=f1e217] [cursor=pointer]:
+                              - /url: https://www.globalsqa.com/wp-admin/widgets.php
+                        - generic [ref=f1e218]:
+                          - heading "Footer Widget Area 4" [level=3] [ref=f1e219]
+                          - paragraph [ref=f1e220]:
+                            - link "Assign a widget to this area now." [ref=f1e221] [cursor=pointer]:
+                              - /url: https://www.globalsqa.com/wp-admin/widgets.php
+                      - generic [ref=f1e226]:
+                        - link "pinterest" [ref=f1e227] [cursor=pointer]:
+                          - /url: https://in.pinterest.com/globalsqa/
+                        - link "twitter" [ref=f1e228] [cursor=pointer]:
+                          - /url: https://twitter.com/Global_SQA
+                        - link "linkedin" [ref=f1e229] [cursor=pointer]:
+                          - /url: https://www.linkedin.com/company/globalsqa
+                        - link "google" [ref=f1e230] [cursor=pointer]:
+                          - /url: https://plus.google.com/103761557396023531439/posts
+                        - link "facebook" [ref=f1e231] [cursor=pointer]:
+                          - /url: https://facebook.com/globalsqa
+                        - generic [ref=f1e232]:
+                          - text: "Website Designed & Developed by :"
+                          - link "GlobalSQA" [ref=f1e233] [cursor=pointer]:
+                            - /url: https://www.globalsqa.com
+          - paragraph [ref=e184]
+    - generic:
+      - insertion:
+        - iframe [ref=e186]:
+          
+    - generic [ref=e187]:
+      - generic [ref=e189]:
+        - generic [ref=e190]:
+          - heading "Footer Widget Area 1" [level=3] [ref=e191]
+          - paragraph [ref=e192]:
+            - link "Assign a widget to this area now." [ref=e193] [cursor=pointer]:
+              - /url: https://www.globalsqa.com/wp-admin/widgets.php
+        - generic [ref=e194]:
+          - heading "Footer Widget Area 2" [level=3] [ref=e195]
+          - paragraph [ref=e196]:
+            - link "Assign a widget to this area now." [ref=e197] [cursor=pointer]:
+              - /url: https://www.globalsqa.com/wp-admin/widgets.php
+        - generic [ref=e198]:
+          - heading "Footer Widget Area 3" [level=3] [ref=e199]
+          - paragraph [ref=e200]:
+            - link "Assign a widget to this area now." [ref=e201] [cursor=pointer]:
+              - /url: https://www.globalsqa.com/wp-admin/widgets.php
+        - generic [ref=e202]:
+          - heading "Footer Widget Area 4" [level=3] [ref=e203]
+          - paragraph [ref=e204]:
+            - link "Assign a widget to this area now." [ref=e205] [cursor=pointer]:
+              - /url: https://www.globalsqa.com/wp-admin/widgets.php
+      - generic [ref=e210]:
+        - link "pinterest" [ref=e211] [cursor=pointer]:
+          - /url: https://in.pinterest.com/globalsqa/
+        - link "twitter" [ref=e212] [cursor=pointer]:
+          - /url: https://twitter.com/Global_SQA
+        - link "linkedin" [ref=e213] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/globalsqa
+        - link "google" [ref=e214] [cursor=pointer]:
+          - /url: https://plus.google.com/103761557396023531439/posts
+        - link "facebook" [ref=e215] [cursor=pointer]:
+          - /url: https://facebook.com/globalsqa
+        - generic [ref=e216]:
+          - text: "Website Designed & Developed by :"
+          - link "GlobalSQA" [ref=e217] [cursor=pointer]:
+            - /url: https://www.globalsqa.com
+  - insertion [ref=e220]:
+    - iframe [ref=e223]:
+      - iframe [ref=f12e1]:
+        - generic [ref=f13e2]:
+          - link "Advertisement" [ref=f13e4] [cursor=pointer]:
+            - /url: https://ad.doubleclick.net/pcs/click?xai=AKAOjssa-z6kCcNG2rqJ7ja32FMM2CXSKx59hCoIyVQjt9ruttSaP8mxoN6onvd7BYKxnB4TRZktvuI4uFBt8kPuyekLJiB7NN8U1aMsIsjZU3y_wgw08VFlZ4OFu-LFldglHuXQ4B6wWW5K4cnl3EXknQsrCrPpv2wPJt8bws0CFya3HrBCbD-fEPcMFaZo34238y6X4S43qzx_ekmz8XwPqnU7hlccjm8rcLW8v7BQJH_Fj_WX5pRR7N1qUD70aSaIxHVu7lsfyPNKxYqdef0GBia_hUh_XaUQ7aDeXUSs0SS7who4FmMSqQEyQ5rqxcqHTNomfYwHXlkQENpgiWvtF1f97qCZymx9ebcpJ4aEZWLb6MsKZor3HkuAkQRbQsxPCP2zjzlQyv0BzzHpT4DIIs4ptkDrSLdRKGhvfdVVrRRxdG0ojwT0DQcMYMG5nZ_N-J0nEozdDESFOMR89yISCmqXfZBqU6TLz-hvUFzy281Z-Sn2YR02lVcHg_XNkI6OtY8dSahR481mjBpOjEsrvIrzFwS5RGkdJPyh5HHF1WKIL58ts2RnH6sSM8iyNCBKqyR8kMRSSDwgyf9xLXfLC_bvtgvQXBjVn0vrmVlLTFMwgBTHETWX_OvkIb_9SpdvXIUZkmTTWE7PrUlStTGmAz3pDv-62nhfqDJs86b2edw_I0pq5MNF4f6bOUkyX62LNydsbhbFCPGpvjpDm4uiB-yGty5fy0gVaDDNeCwDp0wzl9CHDzkJaCGZYswkPFDVtj2cV1rY15rH_bncXK5Alq8INkD_A0S1exYOpB1o8iwM5TTPT2n03iaSn5pMY3INLx28-i0Rktnmekn_b8UooOVL6fFOFrrbvj-f4RB5xdkYYfIXfY-32vzfG3WUJx3Y36DAVVxhLCTUk3fimeJUWfj-zZrqiVON_aLBO4rdYLqxP9TxlDFLjFNm0iZBvQNxm-qu-UyGnNwyU10lw8vpLYEYeDnYBvfFAxdjeuHrNM7XmssG-I1OUwtaySjLe5-EQGBKtgPaxLyFqWXErSN3BzALUJ0Faduy7bCwep-obwRYid0Mceqkk5myZEMPyCdJP3ZevM-4Wik5-y1wq0qQYJXXHK-ANqNkn7uCBaDGOEOW0cCPV37iH4RdSCftsgIYMrx1RulMbvYlZcy_01sBBnfWYsaXMGUqprKJ48gRmXQEkUR6hNmSwfLZqVqdVhyClao1uLIUr-6-Shk4Z3ojZmbEr4JdpGjNuYCQDyoPMcgg5CHQAH5G0wLGHNmd0ymA6kbPGkO2Gwt_abRrmMD-UFtUS-V5MLihURaI1jwRul4Z-Xd7_tWWwYa7qyFlXiEesGnK3elG-a6Iyq-hSK67ovXSpsMA_VYVCjzk3vPd8B1fwsNcJU8wzfQ_nWEOCr4beLr_8ftzdnkRAibQXR8CIzLjLZPovU5Zf42XGsOv0xnUbhJRx7kFNuXquW9XhQU1pb1Gt9vw1Eb7lyuVGzAU668I6Ms6thPr5JOMuYrUClS3F11DOa0g_kGg84iY7ThTRlXvWzd2DEyp-25S-JUrNZU5F_TQ6YJDT5SxskW6dzxnzfxVWNgNNr_W117FbQlbcLh43kjYhIDCRbxQw_lcycATIDXMTtZHFtJDKXjYO1LMNnoHsIjyubV0-eLIqABtPmSbPDEHeNBJv7r8DD5yGSNCcTLUPVDAqfNYUic38DJUzbI&sai=AMfl-YREMx1Fcfz8WVGcjz-UUnLD15X5bdYPICn2jWrMSqYTzoL5hkBeePnJ_RMree_SHyur2_nxmIl1YYqk3-vqmzT3mQ54FRC4Gksl7G7Ev-0tI0AfRrA66q_l7jDgYIRktMYkDbw4CE5nI3ek0f1oUR6k91IjwOqz0Y_q45ctTaagCaqIdnKl6Zb7huL7XZsAaPDrXTvXcGcsA1BzcN96e8665uYwOZmnVKjBBCbNgEtU02QKJyJukPyp-wSjSpIGzYw_9zj2oTziuvEIon9lHUJfXD9-RF2AU3hZLHQH0RYSuvAZLxazO4fcfXBrgIqgWx5cC9fI40s9BUNgCBJIOFjnUVnBNf8MNN8ecRdSyS_xgJzpc_n8KSM14JXbGQIxvoaZ687xHb2_mvOLXbGqCYu20T3Z4B75dt-lbRGwTa7mYUpjSSS3nkTIW8vLrkaC0zRbjt7ZNtdDahQpdbXF_6v6XaJmorYSQMv06130GJYvicz9UCJJgik-6s8hF_lNZ2ltUwLrGaExSdoo3a_T2N8hZzw_bg2IOCokDv0puToUyWHg0-LxdQjOtiCDqJ8jJbnEkzwPupIoEXbG33PXx7pBhPzQ1tGyTKTx0yrtSCwuIBj3iy1CjTuZ-QtlYVOWBoe_8sP-ZG4scVqGcENfixL7XTa-5a4Qwi9xrJ9BDnsnjSyD8fJV7V6dd-eZ8tA_culPke22EO_gIZsMMpFmPU1dOUSrgkjkDuJcMzgoSiJD_L3XbGXmEU3rjpPRROgWrOYqW0rqSE1fQ3vmXNywBuTDhA7HqITzU-NwnNGQk59T-YoECIrkThg-wTNd0UcFky3KlY1rSdaUCHRq0AyO3MqAAkAY6Mt6_UWF8JTQAhK806nkX8LWc3ZNa5c9nhBkIVxp1S62auUsiIVQTZuk70RHf_-o95Kyr-H1Tsgq5P94MWwVdEfnY7Z6JUth1jBMYHXDZNutow-_TyiE6E8YgdUuxNSH3l4RDsNoNkiUqvc&sig=Cg0ArKJSzLjT5CDCEKYS&fbs_aeid=%5Bgw_fbsaeid%5D&crd=aHR0cHM6Ly9wcmltZXZpZGVvLmNvbQ&urlfix=1&adurl=https://www.primevideo.com/offers/nonprimehomepage/%3Fref_%3Ddvm_pdd_rtbdv360_mt-apt_ln_st_drishyam3-karuppuc1_na%26dclid%3D%25edclid!%26gad_source%3D7%26gad_campaignid%3D23957436665
+            - img "Advertisement" [ref=f13e5]
+          - generic [ref=f13e6]:
+            - generic:
+              - img [ref=f13e10] [cursor=pointer]
+              - button [ref=f13e12] [cursor=pointer]:
+                - img [ref=f13e13]
+  - generic [ref=e224]:
+    - generic [ref=e225] [cursor=pointer]:
+      - img [ref=e227]
+      - link "Go to shopping options for Development Tools" [ref=e229]: Development Tools
+    - button "Close shopping anchor" [ref=e230]
+```

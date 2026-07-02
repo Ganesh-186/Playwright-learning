@@ -1,0 +1,76 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: window.spec.js >> Assertions
+- Location: tests\window.spec.js:27:5
+
+# Error details
+
+```
+Error: expect(locator).toHaveText(expected) failed
+
+Locator:  locator('#userName-label')
+Expected: "Full Na"
+Received: "Full Name"
+Timeout:  5000ms
+
+Call log:
+  - Expect "toHaveText" with timeout 5000ms
+  - waiting for locator('#userName-label')
+    13 × locator resolved to <label class="form-label" id="userName-label">Full Name</label>
+       - unexpected value "Full Name"
+
+```
+
+```yaml
+- text: Full Name
+```
+
+# Test source
+
+```ts
+  1  | import {expect, test} from '@playwright/test'
+  2  | 
+  3  | test('Window handling',async({browser})=>{
+  4  |     const context = await browser.newContext();
+  5  |     const page = await context.newPage();
+  6  |     await page.goto('https://www.flipkart.com');
+  7  |     await expect.soft(page).toHaveURL('https://www.flipkart')
+  8  |     await page.getByRole('textbox',{name:'Search for Products, Brands and More'}).fill('mobiles');
+  9  |     await page.keyboard.press('Enter');
+  10 |     
+  11 |     const [newtab] = await Promise.all([
+  12 |         context.waitForEvent('page'),
+  13 |         page.click('//div[contains(text(),"F70e 5G")]')
+  14 |     ])
+  15 |     await newtab.waitForLoadState();
+  16 |     // await newtab.getByRole('button',{name:'Buy now'}).click();
+  17 |     await newtab.getByText('Buy now').click();
+  18 |     console.log(await newtab.title());
+  19 | 
+  20 |     // await expect.soft(newtab).toHaveTitle('Samsung Galaxy F70e 5G') 
+  21 |     // await expect.soft(newtab).toHaveURL('') 
+  22 |     await page.bringToFront();
+  23 |     await newtab.waitForTimeout(4000)
+  24 | 
+  25 | })
+  26 | 
+  27 | test('Assertions',async({page})=>{
+  28 |     
+  29 |     await page.goto('https://demoqa.com/text-box')
+  30 |     // await expect(page.getByRole('button',{name:'Submit'})).toBeEnabled();
+  31 |     // await expect(page.getByRole('button',{name:'Submit'})).toBeVisible();
+  32 |     await expect(page.getByRole('button',{name:'Submit'})).not.toBeDisabled();
+  33 |     await expect(page.getByRole('button',{name:'Submit'})).not.toBeHidden()
+> 34 |     await expect(page.locator('#userName-label')).toHaveText('Full Na');
+     |                                                   ^ Error: expect(locator).toHaveText(expected) failed
+  35 |     await page.pause();
+  36 |     await expect(page.locator('#userName-label')).toContainText('Full')
+  37 | 
+  38 | })
+```
