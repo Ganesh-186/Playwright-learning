@@ -36,14 +36,5 @@ test('Keyboard Action',async({page})=>{
 
 
 
-    // await page.goto('https://jqueryui.com/droppable/');
-    // const frame = await page.frameLocator('iframe');
-    // // await frame.locator('#draggable').dragTo(await frame.locator('#droppable'));
-    // await frame.locator('#draggable').hover();
-    // await page.mouse.down();
-    // await frame.locator('#droppable')
-    // // await page.mouse.move(2,0)
-    // await page.mouse.up();
 
-    // await page.waitForTimeout(4000)
 })
