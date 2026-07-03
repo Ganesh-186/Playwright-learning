@@ -8,5 +8,5 @@ test('Screeen Record',async()=>{
             dir:'./record'
         }
     });
-
+    name = 'Ganesh';
 })
