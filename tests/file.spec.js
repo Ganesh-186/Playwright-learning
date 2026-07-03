@@ -16,11 +16,4 @@ test('File Handling',async({page})=>{
     //     "C:/Users/ganes/OneDrive/Pictures/Screenshots/Screenshot 2026-06-08 201916.png"
     // ]);
     // await page.waitForTimeout(9000)
-
-    await page.goto('https://demoqa.com/upload-download');
-    const [result]=await Promise.all([
-        page.waitForEvent('download'),
-        page.click('#downloadButton')
-    ]);
-    await result.saveAs('C:/Users/ganes/Downloads/file1.png')
 })
