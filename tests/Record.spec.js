@@ -8,5 +8,8 @@ test('Screeen Record',async()=>{
             dir:'./record'
         }
     });
-    name = 'Ganesh';
+    const page1 = await context.newPage();
+    const page2 = await context.newPage();
+    await page1.goto('https://www.flipkart.com')
+    await page2.goto('https://www.amazon.in')
 })
