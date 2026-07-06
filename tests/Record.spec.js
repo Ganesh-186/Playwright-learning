@@ -14,4 +14,5 @@ test('Screeen Record',async()=>{
     await page2.goto('https://www.amazon.in')
 
     name="Sai"
+    age = 39
 })
