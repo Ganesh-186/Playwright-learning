@@ -12,5 +12,7 @@ test('Screeen Record',async()=>{
     const page2 = await context.newPage();
     await page1.goto('https://www.flipkart.com')
     await page2.goto('https://www.amazon.in')
-    name = 'ganesh'
+
+    name="Sai"
+    age = 39
 })
